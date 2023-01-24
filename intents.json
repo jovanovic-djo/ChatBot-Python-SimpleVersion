@@ -9,9 +9,9 @@
          "responses": ["Belgrade", "I am located in Belgrade", "Belgrade, Serbia"],
          "context_set": ""
         },
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
-         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+        {"tag": "help",
+         "patterns": ["Give me the service number", "I want to call support", "Provide me customer service", "I need help", "I have problem"],
+         "responses": ["Customer service: 999 999 999"],
          "context_set": ""
         },
         {"tag": "goodbye",
@@ -31,12 +31,22 @@
         },
         {"tag": "shop",
          "patterns": ["Id like to buy something", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
-         "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
+         "responses": ["We sell wide variety of tech", "You can choose any item from our selection", "Be free to pick out any product from shown categories"],
          "context_set": ""
         },
         {"tag": "hours",
-         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
-         "responses": ["We work all day and all night", "We work 24/7"],
+         "patterns": ["when are you guys open", "what are your hours", "How many hours a day do you work","What period of time do you work"],
+         "responses": ["We work all day and all night", "We work 24/7", "We cant stop and we wont stop"],
+         "context_set": ""
+        },
+        {"tag": "love",
+         "patterns": ["I love you", "You are nice", "Good bot", "You are great", "Thank you"],
+         "responses": ["Thank you very much", "I am glad to hear that", "It is nice to hear that"],
+         "context_set": ""
+        }
+        {"tag": "random",
+         "patterns": ["Say something random"],
+         "responses": ["Deep Fried Wagyu A5 MS12 with mayo", "42.48720043780008, 18.699536179537244", "no."],
          "context_set": ""
         }
    ]
