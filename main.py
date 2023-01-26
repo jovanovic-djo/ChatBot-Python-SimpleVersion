@@ -13,8 +13,6 @@ import pickle
 with open("intents.json") as file: 
     data = json.load(file)
 
-print(data["intents"])
-
 try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
